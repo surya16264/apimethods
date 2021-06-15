@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & signUp form</title>
+    <link rel="stylesheet" href="Login&signUp_form/loginPageStyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login" >
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-success"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" id="loginUsername" autofocus placeholder="Username/Email">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" id="loginPassword" autofocus placeholder="Password" >
+                <span class="material-icons" id="password-visibility">
+                    visibility
+                    </span>
+                <div class="form-input-error-message" id="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="button" id="login-form-Button">Login</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password</a>
+            </p>
+            <p class="form-text">
+                <a href="#" class="form-link" id="linkCreateAccount">Don't have an account? SignUp</a>
+            </p>
+        </form>
+        <form class="form form-hidden" id="createAccount" >
+            <h1 class="form-title">SignUp</h1>
+            <div class="form-message form-message-success"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input form-input-text" id="signUpUsername" autofocus placeholder="Username">
+                <div class="form-input-error-message error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" id="signUpEmail" autofocus placeholder="Email">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input form-input-text" id="signUpPassword" autofocus placeholder="Password">
+                <div class="form-input-error-message error-message" id="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input form-input-text" id="signUpConfirmPassword" autofocus placeholder="Confirm Password">
+                <div class="form-input-error-message error-message" id="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="button" id="signUp-form-button">Create Account</button>
+            <p class="form-text">
+                <a href="#" class="form-link" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+    </div>
+    <script src="Login&signUp_form/loginPageJsFile.js"></script>
+</body>
+</html>
