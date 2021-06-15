@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fetching from API</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header-section">
+        <div class="navbar">
+            <div class="op-name">
+                crud operations
+            </div>
+            <div class="addpost">
+                <button class="addpostbtn"> Add Post</button>
+            </div>
+            <div class="logoutPage">
+                <div class="dropdown">
+                    <li>
+                        Username 
+                        <span class="material-icons arrowDownBtn">arrow_drop_down</span> 
+                        <span class="material-icons arrowUpBtn " id="arrowUpBtnActive">arrow_drop_up</span>
+                    </li>
+                    <div class="dropdownList ">
+                        <span class="material-icons">
+                            logout
+                        </span>
+                        Logout
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+   <div class="table-container">
+       <table class="tableBody"></table>
+       <div class="popupbox">
+           <div class="popbox"> 
+               <i class="fa fa-close"></i>
+                <form class="inputDetails">
+                    <div class="inputFeilds">
+                        <label for="titleInput">Title : </label>
+                        <input type="text" id="titleInput"  placeholder="Enter the title*">
+                        <div></div>
+                        <div class="errorMessage">This feild is required</div>
+                    </div>                   
+                    <div class="inputFeilds">
+                        <label for="categoryInput">Category : </label>
+                        <input type="text" id="categoryInput"  placeholder="Enter the category*">
+                        <div></div>
+                        <div class="errorMessage">This feild is required</div>
+                    </div>                   
+                    <div class="inputFeilds">
+                        <label for="priceInput">Price : </label>
+                        <input type="text" id="priceInput"  placeholder="Enter the price*">
+                        <div></div>
+                        <div class="errorMessage">This feild is required</div>
+                    </div>
+                    <div class="inputFeilds">
+                        <label for="descriptionInput">Description : </label>
+                        <input type="text" id="descriptionInput"  placeholder="Enter the description*">
+                        <div></div>
+                        <div class="errorMessage">This feild is required</div>
+                    </div>                
+                    <div class="inputFeilds">
+                        <label for="imageInput">Image URL : </label>
+                        <input type="text" id="imageInput"  placeholder="Enter the image url*">
+                        <div></div>
+                        <div class="errorMessage">This feild is required</div>
+                    </div>  
+                    <div class="inputFeilds">
+                        <input type="button" class="Post" id="Post" value="Post">
+                        <input type="button" class="editPost" id="editPost" value="Edit">
+                    </div>               
+                    
+                </form>
+           </div>   
+       </div>
+   </div>
+</body>
+<script src="classAPImethod.js" type="module"></script>
+</html>
