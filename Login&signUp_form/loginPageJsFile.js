@@ -65,7 +65,7 @@ let creatingUserDetails = (e) => {
             userDetailsArray.push(userDetails);
             localStorage.setItem('UserDetails', JSON.stringify(userDetailsArray));
             // window.location.href = "../FetchDataInApi/index.html";  
-            window.location.href = "localhost/JS_Tasks/FetchDataInApi/index.html";
+            window.location.href = "./FetchDataInApi/index.html";
         }
         else {
             e.preventDefault();
@@ -104,7 +104,7 @@ let findingUserLogin = (e) => {
         }); 
         if(userFind) {
             sessionStorage.setItem('LoginUser', JSON.stringify(user));
-            window.location.href = "localhost/JS_Tasks/FetchDataInApi/index.html";
+            window.location.href = "./FetchDataInApi/index.html";
         }
         else {
             e.preventDefault();
